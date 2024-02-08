@@ -2,8 +2,10 @@
 
 const express = require('express');
 const mysql = require('mysql2');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -20,6 +22,7 @@ app.get('/api/employees', (req, res) => {
             throw error;
         }
         res.json(results);
+        console.log(results);
     });
 });
 
