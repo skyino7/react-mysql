@@ -16,8 +16,8 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
-app.get('/api/employees', (req, res) => {
-    connection.query('SELECT * FROM employees', (error, results) => {
+app.get('/api/customers', (req, res) => {
+    connection.query('SELECT * FROM customers', (error, results) => {
         if (error) {
             throw error;
         }
