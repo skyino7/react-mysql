@@ -1,0 +1,10 @@
+/* CreditLimitChart.css */
+
+#creditLimitChart {
+    width: 800px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
