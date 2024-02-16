@@ -54,6 +54,13 @@ function TablePagination({ data, itemsPerPage }) {
                     ))}
                 </tbody>
             </table>
+
+            <p>Total customers: {data.length}</p>
+            <p>Customers per page: {currentItems === 0 ? 0 : currentItems.length}</p>
+            <p>Total pages: {totalPages}</p>
+            <p>Items per page: {itemsPerPage}</p>
+            <p>Current page: {currentPage}</p>
+
             <div>
                 <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>Previous</button>
                 <span>Page {currentPage} of {totalPages}</span>
