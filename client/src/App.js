@@ -19,7 +19,6 @@ function App() {
           <TablePagination data={data} itemsPerPage={10} />
 
           <h1>Credit Limit Chart</h1>
-
           <CreditLimitChart />
 
       </div>
