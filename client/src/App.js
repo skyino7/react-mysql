@@ -18,6 +18,8 @@ function App() {
           <h1>Customers</h1>
           <TablePagination data={data} itemsPerPage={10} />
 
+          <h1>Credit Limit Chart</h1>
+
           <CreditLimitChart />
 
       </div>
